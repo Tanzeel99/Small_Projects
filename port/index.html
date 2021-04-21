@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <header>
+      <nav id="navbarjmp" class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Work Experience">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+      <br>
+      <div data-spy="scroll" data-target="#navbarjmp" data-offset="100">
+      </header>
+      <main>
+        <section id="About" class="about py-5">
+          <div class ="row align-items-center container my-5 mx-auto">
+            <div class = "text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+              <h4>About</h4>
+              <p>An Electronics and Communication Engineering student with prior experience in Embedded Systems & IOT
+                through internships and projects and with strong time management, problem solving and team skill and keeping a
+                close eye on emergent technologies, looking for a software/hardware engineering job that would help improve
+                professional and domain skills and dedicate the skills acquired for the overall benefit of the organization.</p>
+            </div>
+            <div class = "img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+              <img width="300" height="300" class="img-fluid" src="img.jpg">
+            </div>
+          </div>
+          </section>
+        
+
+        <section id="Education" class="edu py-5">
+          <h4>Education</h4>
+        <table class="table  table-dark table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Education Level</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Marks Obtained</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><p>Bachelor’s of Engineering – Electronics & Communication
+                Engineering</p>
+              <p>Mangalore Institute of Technology & Engineering</p></td>
+              <td>2017 - Present</td>
+              <td>CGPA: 7.9</td>
+            </tr>
+            <tr>
+              <td><p>Senior Secondary (12th) - KSEEB</p>
+              <p>St. Aloysius Pre-University College</p></td>
+              <td>2016 - 2017</td>
+              <td>Percentage: 82%</td>
+            </tr>
+            <tr>
+              <td><p>Secondary School (SSLC) - KSEEB</p>
+              <p>St. Aloysius High Schoool</p></td>
+              <td>2014 - 2015</td>
+              <td>Percentage: 90.72%</td>
+            </tr>
+          </tbody>
+        </table>
+        </section>
+        
+        
+        <section id="Work Experience" class="work py-5">
+        <h4>Work Experience</h4>
+        <div class="card text-white bg-dark mx-auto justify-content-center mb-3 border-0" style="max-width: 750px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="img1.png" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><b>Intern at Slekin Technical Solution (July 2019)</b></h5>
+                <p class="card-text"><b>Technologies: </b>Arduino UNO, NodeMCU, PCB designing using Frizting, HTML</p>
+                <p class="card-text"><b>Experience: </b>Gained experience in programming Arduino UNO, PCB designing and basic web designing.</p>
+                <p><a href="https://www.slekin.com/" target="_blank">Website</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        
+
+        <section id="Projects" class="proj py-5">
+          <h4>Projects</h4>
+          <hr/>
+          <div class="card-deck">
+            <div class="card text-white bg-dark">
+              <div class="card-body">
+                <h5 class="card-title">SPark: A Smart Parking System [Group: 4]</h5>
+                <hr/>
+                <p class="card-text"><b>Technology and Device Used:</b> OpenCV, Arduino UNO, GSM SIM900A.</p>
+                <p class="card-text"><b>Description:</b> The project aims to solve problems related to vehicle parked haphazardly in crowded places like markets, fairs,
+                  etc. With the help of push button placed outside the car, a person facing problem related to certain car can notify the car
+                  owner through SMS.</p>
+                
+              </div>
+            </div>
+            <div class="card text-white bg-dark">
+              <div class="card-body">
+                <h5 class="card-title">Emergency Neighbour Notifier [Individual]</h5>
+                <hr/>
+                <p class="card-text"><b>Device Used: </b> MSP430G2553, GSM SIM900A.</p>
+                <p class="card-text"><b>Description:</b> The project aims to alert the neighbours through SMS in case of emergency with the help of a switch.</p>
+                
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+ 
+        
+
+        <section id="Achievements" class="achv py-5">
+          <h4>Achievements</h4>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Smart Parking System (Project) Shortlisted to Semi Final in AICTE, DST & Texas Instrument India Innovation
+                  Challenge Design Contest 2019, Anchored by IIM, Bangalore.</li>
+                <li class="list-group-item">Emergency Neighbour Notifier (Project) is published in ElectronicWings Open Source Developers
+                  Community.</li>
+                <li class="list-group-item">Emergency Neighbour Notifier (Project) got participation certificate in ElectronicWings project Challenge
+                  2020.</li>
+                <li class="list-group-item">Achieved First place in IICDC-2019-Linear Integrated Circuit – an online contest on 25th Oct 2019 by TI
+                  University Program.</li>
+                <li class="list-group-item">Division Basket Ball Player.</li>
+              </ul> 
+            </div>
+          </div>
+        </section>
+
+
+
+        
+        
+        <!--<section  id="skill" class="skill py-5" >
+          <h4>Skills</h4>
+          <li>
+            <h3>HTML 5 [75%]</h3><span class = "bar"><span class="html "></span></span>
+          </li>
+          <li>
+            <h3>CSS 3[60%]</h3><span class = "bar"><span class="css"></span></span>
+          </li>
+          <li>
+            <h3>Bootstrap[70%]</h3><span class = "bar"><span class="bootstrap"></span></span>
+          </li>
+        </section>-->
+        
+
+
+        <section class="contact" id="contact">
+          <div id="parah"><h4>Contact</h4>
+            <p><b><i></i>Name:</i></b>Mohammed Tanzeel Khan.</p>  
+            <p><b><i></i>Address:</i></b> Mangalore, Karnataka, India.</p>
+            <p><b><i>Mail ID:</i></b> mtanzeelkhan99@gmail.com</p>
+            <ol> 
+              <li><a href = "https://www.linkedin.com/in/mohammed-tanzeel-khan-891790197/"target='_blank'>Linkedin Profile</a></li>
+              <li><a href = "https://drive.google.com/file/d/13EYaK_QjzShDxOp6W7W9CkhdliSTVfvn/view?usp=sharing"target='_blank'>My Resume</a></li>
+            </ol>
+          </div>
+        </section>
+      </div>
+    </main>
+
+  </body>
+</html>
