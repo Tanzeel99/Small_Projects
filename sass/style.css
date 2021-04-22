@@ -1,0 +1,98 @@
+h3, p, input {
+  font-family: 'Pacifico';
+}
+
+h1, .con, a {
+  font-family: 'New Tegomin';
+  text-shadow: 3px 3px 2px cadetblue;
+}
+
+.con, a {
+  color: black;
+  text-align: left;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  float: left;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+h1, .con, a {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+a:hover, input:hover {
+  color: darkorange;
+  text-decoration: none;
+}
+
+#parah {
+  padding: 18px;
+  border: 10px solid black;
+  margin: 10px;
+  background-color: darkslategray;
+}
+
+nav {
+  background-color: darkslategray;
+  overflow: hidden;
+}
+
+.contact {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+#parah h4 {
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: larger;
+  letter-spacing: 1.5px;
+}
+
+.about .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+  text-shadow: 3px 3px 2px cadetblue;
+}
+
+.about .text p {
+  color: cadetblue;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding: 25px;
+  letter-spacing: 0.5px;
+}
+
+.txt {
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */
