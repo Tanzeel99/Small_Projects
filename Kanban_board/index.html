@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6bfc82e12a.js" crossorigin="anonymous"></script>
+  <style>
+  body {font-family:'Klee One', cursive;
+  background-image: linear-gradient(120deg, #e1c56b 0%, #fda085 100%);
+  }
+  h2 {
+      margin:5px;
+    }
+  input[type=text] {
+      margin:10px
+    }
+    .center{
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+    }
+  .container {
+      width: 20%; 
+      float:left;
+      clear: right;
+      margin:10px; 
+      border-radius: 5px;
+    }
+  .sortable { 
+      list-style-type: none; 
+      margin:0; 
+      padding:2px; 
+      min-height:30px; 
+      border-radius: 5px;
+    }
+  .sortable li { 
+      margin: 3px 3px 3px 3px; 
+      padding: 0.4em; 
+      padding-left: 1.5em; 
+      font-size: 1.4em; 
+      height: 18px;
+    }
+  .sortable li span { 
+      position: absolute; 
+      margin-left: -1.3em; 
+    }
+  .card{
+      background-color:white;
+      border-radius:3px;
+    }
+  #new_text{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 2 rem;
+    border-radius: 25px;
+    width: 12rem;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+.add{
+	outline: none;
+    border-radius: 25px;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+  </style>
+  <script>
+  $(function() {
+    $( ".sortable" ).sortable({
+      connectWith: ".connectedSortable",
+      receive: function( event, ui ) {
+        $(this).css({"background-color":"rgb(102, 199, 235);"});
+      }
+    }).disableSelection();
+    $('.add').click(function() {
+        var txtNewItem = $('#new_text').val();
+        $(this).closest('div.container').find('ul').append('<li class="card">'+txtNewItem+'</li>');
+    });    
+  });
+  </script>      
+</head>
+<body>
+</body>
+<div class="center">
+<div class="container" style="background-color:rgb(102, 199, 235);">
+<h2>TODO</h2>
+<ul class="sortable connectedSortable">
+</ul>
+<div class="link-div">
+    <input type="text" id="new_text" placeholder="Task to be Done"/>
+    <button class="add"><i class="fas fa-plus"></i></button>
+</div>
+</div>
+<div class="container" style="background-color:rgb(102, 199, 235);">
+<h2>In Progress</h2>
+<ul class="sortable connectedSortable" >
+</ul>
+</div>
+<div class="container" style="background-color:rgb(102, 199, 235);">
+<h2>Verification</h2>
+<ul class="sortable connectedSortable" >
+</ul>
+</div>
+<div class="container" style="background-color:rgb(102, 199, 235);">
+<h2>Done</h2>
+<ul class="sortable connectedSortable" >
+</ul>
+</div>
+</div>
+</html>
