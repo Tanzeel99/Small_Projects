@@ -1,0 +1,109 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: cadetblue;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.grid{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.grid.x,.grid.o{
+    cursor: not-allowed;
+}
+
+.row1{
+    border-top: 0;
+}
+.col1{
+    border-left: 0;
+}
+.col3{
+    border-right: 0;
+}
+.row3{
+    border-bottom: 0;
+}
+.grid.x::before,.grid.x::after{
+    content: " ";
+    position: absolute;
+    width: calc((100px * .9) * .15);
+    height:calc(100px * .9);
+    background-color: black;
+}
+.grid.x::before{
+    transform: rotate(45deg);
+    border-radius: 10px;
+}
+.grid.x::after{
+    transform:rotate(-45deg);
+    border-radius: 10px;
+}
+
+.grid.o::before,.grid.o::after{
+    content: " ";
+    position: absolute;
+    border-radius: 50%;
+}
+.grid.o::before{
+    width: calc((100px * 0.9));
+    height:calc(100px * 0.9);
+    background-color: black;
+}
+.grid.o::after{
+    width: calc((100px *0.9) * 0.7);
+    height:calc((100px *0.9) * 0.7);
+    background-color: cadetblue;
+}
+.gameover{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.gameover button{
+    font-size: 2rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .20em .5em;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.gameover button:hover{
+    background-color: green;
+    color: white;
+    border-color: white;
+}
+
+.gameover.show{
+    display: flex;
+}
+
+
